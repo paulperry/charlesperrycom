@@ -1,0 +1,28 @@
+{% extends 'base_jewelry.html' %}
+{% block title %}Jewelry{% endblock %}
+{% block bgcolor %}"#ffffff"{% endblock %}
+{% block contents %}
+<script src="/media/sorttable.js"></script>
+<center>
+<div class="jewel">
+<table class="sortable" style="background-color:#ffffff">
+<thead>
+<tr><th>Year</th><th>Name</th><th>Material</th><th>Style</th><th>Image</th></tr>
+</thead>
+<tbody>
+{% for jewel in jewelry %}
+<tr>
+  <td>{{jewel.year}}</td>
+  <td><a href="{{jewel.get_absolute_url}}">{{jewel.name}}</a></td>
+  <td>{{jewel.material}}</td>
+  <td>{{jewel.style}}</td>
+  <td><a href="/media/jewelry/large/{{jewel.image}}">{{jewel.image}}</a></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</center>
+<br/>
+
+{% endblock %}

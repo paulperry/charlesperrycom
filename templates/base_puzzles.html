@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Puzzles{% endblock %}
+{% block selected %}puzzles{% endblock %}
+{% block scripts %}
+<style type="text/css">  
+td {
+  color: white;
+  font-weight: bold;
+  vertical-align:top; 
+  text-align:left;
+  padding-left: 20px;
+}
+#name { 
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+}
+</style>
+{% endblock %}
+{% block sidebar %}
+<div id="menu" class='{% block sideselected %}none{% endblock %}'> 
+  <ul>
+  <li style="margin-left:7px;"><a href="/">HOME</a></li>
+  <li style="margin-left:188px;"><a id='chessset' href="/puzzles/chess-set">CHESS SET</a></li>
+  <li><a id='cubechessset' href="/puzzles/cubic-chess-set">CUBIC CHESS SET</a></li>
+  <li><a id='ball' href="/puzzles/ball-puzzle">BALL</a></li>
+  <li><a id='plexi' href="/puzzles/plexi-ball-puzzle">PLEXI</a></li>
+  <li><a id='dada' href="/puzzles/dada">DADA</a></li>
+  <li><a id='zen' href="/puzzles/zen-puzzle">ZEN</a></li>
+  <li><a id='double' href="/puzzles/double-puzzle">DOUBLE</a></li>
+  <li><a id='sasso' href="/puzzles/sasso-puzzle">SASSO</a></li>
+  </ul>
+</div>
+{% endblock %}
+
+

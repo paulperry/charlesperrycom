@@ -1,0 +1,26 @@
+{% extends 'base_art.html' %}
+{% block title %}{{ sideselection }}{% endblock %}
+{% block sideselected %}{{ sideselection }}{% endblock %}
+{% block contents %}
+<br>
+{% block submenu %}
+<div id="submenu" class={% block subselected %}{{subselection}}{% endblock %}>
+  <ul>
+    <li><a id='aluminum' href="/sculpture/material/aluminum/">ALUMINUM</a></li>
+    <li><a id='bronze' href="/sculpture/material/bronze/">BRONZE</a></li>
+    <li><a id='steel' href="/sculpture/material/steel/">STEEL</a></li>
+    <li><a id='stainlesssteel' href="/sculpture/material/stainlesssteel/">STAINLESS</a></li>
+    <li><a id='mother' href="/sculpture/material/other/">OTHER</a></li>
+  </ul>
+</div>
+{% endblock submenu %}
+{% comment %}
+<br><font style="float:left; width:500px;" color="#FFFFFF"><strong>Click image to enlarge and view details</strong></font><br><br>
+{% endcomment %}
+{% for art in arts %}
+<div class="photos" style="float:left; padding:5px;"> 
+  <a href="{{art.get_absolute_url}}" onClick="this.blur()"><img src="/media/sculpture/medium/{{art.image}}_m.jpg" width="150" height="150"></a><br/>
+    <font size="1" color="#FFFFFF"><b>{{art.name}}</b></font>
+</div>
+{% endfor %}
+{% endblock %}

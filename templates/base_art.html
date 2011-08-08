@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Sculpture{% endblock %}
+{% block selected %}sculpture{% endblock %}
+{% block sidebar %}
+<div id="menu" class={% block sideselected %}none{% endblock %}>
+  <ul>
+    <li style="margin-left:7px;"><a href="/">HOME</a></li>
+    <li style="margin-left:187px;"><a id='style' href="/sculpture/style/">BY STYLE</a></li>
+    <li><a id='material' href="/sculpture/material/">BY MATERIAL</a></li>
+    <li><a id='listing' href="/sculpture/list/">BY LISTING</a></li>
+    <li><a id='location' href="/sculpture/map/">BY LOCATION</a></li>
+    <li><a id='slideshow' href="/sculpture/slideshow">SLIDES</a></li>
+  </ul>
+</div>
+{% endblock %}
+{% block contents %}
+  <br><center>Artist and Sculptor Charles O. Perry</center>
+{% endblock contents %}
+
+

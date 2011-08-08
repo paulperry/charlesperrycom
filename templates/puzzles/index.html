@@ -1,0 +1,58 @@
+{% extends 'base_puzzles.html' %}
+{% block title %}Puzzles{% endblock %}
+{% block sideselected %}none{% endblock %}
+{% block scripts %}
+<style type="text/css">  
+.photos {
+  display: table; 
+  margin: 0 auto;
+}
+.photos ul {
+  padding:5px;
+}
+.photos li {
+font-size: -1;
+color: #FFFFFF;
+background-color: #000000;
+font-weight: bold;
+}
+.photos a:link, .photos a:visited {color:white;}
+[if IE] .photos {
+  display: block; 
+  margin: 0;
+  texit-align: center;
+}
+[if IE] .photos ul {
+  display: inline;
+  zoom: 1;
+}
+</style>
+{% endblock %}
+{% block contents %}
+</br><b><font size="-1" color="#FFFFFF">Click image to view</font></b></br>
+<div class="photos">
+<ul>
+  <li><a onClick="this.blur()" href="chess-set">Chess Set<br>
+      <img src="/media/puzzles/chess-set_s.jpg"></a></li>
+  <li><a onClick="this.blur()" href="cubic-chess-set">Cubic Chess Set<br>
+      <img style=" " src="/media/puzzles/cubic-chess-set_s.jpg"></a></li>
+</ul>
+<br>
+<ul>
+  <li><a  onClick="this.blur()" href="ball-puzzle">Ball Puzzle<br>
+      <img src="/media/puzzles/ball-puzzle_s.jpg"></a></li>
+  <li><a  onClick="this.blur()" href="plexi-ball-puzzle">Plexi Ball Puzzle<br>
+      <img src="/media/puzzles/plexi-ball-puzzle_s.jpg"></a></li>
+  <li><a  onClick="this.blur()" href="dada">Dada<br>
+      <img src="/media/puzzles/dada_s.jpg"></a></li>
+</ul><br>
+<ul>
+  <li><a onClick="this.blur()" href="zen-puzzle">Zen Puzzle<br>
+      <img src="/media/puzzles/zen-puzzle_s.jpg"></a></li>
+  <li><a onClick="this.blur()" href="double-puzzle">Double Puzzle<br>
+      <img src="/media/puzzles/double-puzzle_s.jpg"></a></li>
+  <li><a onClick="this.blur()" href="sasso-puzzle">Sasso Puzzle<br>
+      <img src="/media/puzzles/sasso-puzzle_s.jpg"></a></li>
+</ul><br>
+</div>
+{% endblock %}

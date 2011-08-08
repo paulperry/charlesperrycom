@@ -1,0 +1,24 @@
+{% extends 'base_art.html' %}
+{% block sideselected %}{{ sideselection }}{% endblock %}
+{% block contents %}
+<br>
+{% block submenu %}
+<div id="submenu" class={% block subselected %}{{subselection}}{% endblock %}>
+  <ul>
+    <li><a id='ribbed' href="/sculpture/style/ribbed/">RIBBED</a></li>
+    <li><a id='planar' href="/sculpture/style/planar/">PLANAR</a></li>
+    <li><a id='topological' href="/sculpture/style/topological/">TOPOLOGICAL</a></li>
+    <li><a id='solid' href="/sculpture/style/solid/">SOLID</a></li>
+  </ul>
+</div>
+{% endblock submenu %}
+{% comment %}
+<br><font style="float:left; width:500px;" color="#FFFFFF"><strong>Click image to enlarge and view details</strong></font><br><br>
+{% endcomment %}
+{% for art in arts %}
+<div class="photos" style="float:left; padding:5px;"> 
+  <a href="{{art.get_absolute_url}}" onClick="this.blur()"><img src="/media/sculpture/medium/{{art.image}}_m.jpg" width="150" height="150"></a><br/>
+    <font size="1" color="#FFFFFF"><b>{{art.name}}</b></font>
+</div>
+{% endfor %}
+{% endblock %}

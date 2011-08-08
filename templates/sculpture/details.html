@@ -1,0 +1,99 @@
+{% extends 'base_art.html' %}
+{% block title %}{{art.name}}{% endblock %}
+{% block sideselected %}{{ sideseletion }}{% endblock %}
+{% comment %}
+/* http://buildinternet.com/2009/07/quick-tip-resizing-images-based-on-browser-window-size/ */
+{% endcomment %}
+{% block scripts %}
+<script type="text/javascript">  
+ $(document).ready(function() {  
+ function imageresize() {  
+ var contentwidth = $('#contents').width();  
+ if ((contentwidth) > '1224'){  
+ $('.pic').attr('src','/media/sculpture/large/{{art.image}}_l.jpg');  
+ } else {  
+ $('.pic').attr('src','/media/sculpture/m/{{art.image}}_m.jpg');  
+ }
+ }
+ 
+ imageresize();
+  
+ $(window).bind("resize", function(){//Adjusts image when browser resized  
+ imageresize();  
+ });  
+  
+});
+</script>  
+
+<script type="text/javascript">  
+/*  // $(document).keydown(function(e) { */
+// funtion donkey() {
+$(document).keydown(function(e) {
+  var e = window.event? event : e; //distinguish between IE's explicit event object (window.event) and Firefox's implicit.
+  var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+  switch(key) {
+  case 32: // space
+    window.document.location = "/sculpture/{{next}}";
+    break;
+  case 33: // Page Up
+    window.document.location = "/sculpture/{{prev}}";
+    break;
+  case 34: // Page Down
+  window.document.location = "/sculpture/{{next}}";
+  break;
+  case 36: // Home
+  break;
+  case 37: // left arrow
+  window.document.location = "/sculpture/{{prev}}";
+  break;
+  case 39: // right arrow
+  window.document.location = "/sculpture/{{next}}";
+  break;
+  case 38: // up arrow
+  window.document.location = "/sculpture/{{prev}}";
+  break;
+  case 40: // down arrow
+  window.document.location = "/sculpture/{{next}}";
+  break;
+  }
+});
+</script>
+{% endblock scripts %}
+{% block location %}
+<!-- fix the location -->
+<meta name="geo.placename" content="{{art.city}}, {{art.state}}, {{art.country}}">
+{% if art.lat %}
+<meta name="geo.position" content="{{art.lan}};{{art.lon}}">
+<meta name="ICBM" content="{{art.lat}},{{art.lon}}">
+{% endif %}
+<meta name="geo.region" content="{{art.country}}-{{art.state}}">
+{% endblock %}
+{% block contents %}
+<center>
+<table style="padding: 20px;">
+  <tr>
+    <td style="text-align:left;"><a href="/sculpture/{{prev}}" alt="Previous">< Previous</a></td>
+    <td style="text-align:right;"><a href="/sculpture/{{next}}" alt="Next">Next ></a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan=2><img alt="Charles O. Perry - {{art.name}}" class="pic" src="/media/sculpture/m/{{art.image}}_m.jpg" border="0"></td>
+<td valign="top" style="text-align: left; padding-left:10px;">
+  <font style="font-size: 1.4em; font-weight: bold; color: white;">
+    {{art.name|safe}}</font><br>
+  <font style="color: white;"><br>
+    {{art.location|safe}}<br>
+    {{art.city}}, {% if art.state %}{{art.state}},{% endif %} {{art.country}}<br>
+    {{art.material}}<br>
+    {{art.size}}<br>
+    {{art.year}}<br>
+    <br>
+{% if art.geolink %}
+    <a target="_map" href="{{art.geolink}}" alt="Locate Me!"><img src="/media/red-dot.png" title="Locate Me!"></a><br>
+{% endif %}
+
+  </font>
+</td>
+</tr>
+</table>
+{% endblock %}

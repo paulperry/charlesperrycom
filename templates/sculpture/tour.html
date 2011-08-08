@@ -1,0 +1,32 @@
+{% extends 'base_art.html' %}
+{% block scripts %}
+<script type="text/javascript">
+/* fix all the time intervals BUGBUGBUG */
+var Dash = {
+    nextIndex: 0,
+    time: 15,
+    dashboards: [
+{% for art in arts %}
+{% if art.visible == "y" %}
+{url: "{{ art.geolink }}&output=embed", time: 5},
+{% endif %}
+{% endfor %}
+    ],
+
+    display: function()
+    {
+        var time_int = 5; // time interval
+        var dashboard = Dash.dashboards[Dash.nextIndex];
+        frames["displayArea"].location.href = dashboard.url;
+        Dash.nextIndex = (Dash.nextIndex + 1) % Dash.dashboards.length;
+        setTimeout(Dash.display, time_int * 1000);
+    }
+};
+window.onload = Dash.display;
+</script>
+{% endblock %}
+{% block contents %}
+<iframe style="border:none;" name="displayArea" width="100%" height="90%"></iframe>
+<br/><small><a href="">View Larger Map</a></small>
+{% endblock %}
+

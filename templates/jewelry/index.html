@@ -1,0 +1,17 @@
+{% extends 'base_jewelry.html' %}
+{% block title %}Jewelry{% endblock %}
+{% block contents %}
+<div id="contents" style="padding: 10px; background-color:#000;">
+  <font color="#FFFFFF"><strong>Click image to enlarge and view details</strong></font></br></br>
+  <div class="photos">
+    <ul style="padding:5px;">
+      {% for j in jewelry %}
+      <li><a href="{{j.get_absolute_url}}" onClick="this.blur()"><img src="/media/jewelry/medium/{{j.image}}" alt="Charles Perry Jewelry - {{j.name}}" height="150" width="150"></a><br>
+	<font size="1" color="#FFFFFF"><b>{{j.name}}</b></font></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
+
+

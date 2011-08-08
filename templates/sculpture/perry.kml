@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="charlesperry_kml">
+<atom:author><atom:name>Charles O. Perry</atom:name></atom:author>
+<atom:link href="http://www.charlesperry.com" />
+<name><![CDATA[Charles O. Perry]]></name>
+<Snippet>Sculptor</Snippet>
+<description><![CDATA[Charles O. Perry Sculptures around the World]]></description>
+<visibility>1</visibility>
+<open>0</open>
+<StyleMap id="style2">
+  <Pair><key>normal</key><styleUrl>#style2_normal</styleUrl></Pair>
+  <Pair><key>highlight</key><styleUrl>#style2_highlight</styleUrl></Pair>
+</StyleMap>
+<Style id="style2_normal">
+  <IconStyle><color>FFFFFFFF</color><scale>0.6</scale>
+  <Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon>
+  <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+  </IconStyle>
+  <LabelStyle><color>FFFFFFFF</color><scale>0.6</scale></LabelStyle>
+  <BalloonStyle><bgColor>FF000000</bgColor><text><![CDATA[$[description]]]></text></BalloonStyle>	
+</Style>	
+<Style id="style2_highlight">
+  <IconStyle><color>FFFFFFFF</color><scale>0.6</scale>
+  <Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon>
+  <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+  </IconStyle>
+  <LabelStyle><color>FFFFFFFF</color><scale>0.6</scale></LabelStyle>
+  <BalloonStyle><bgColor>FF000000</bgColor><text><![CDATA[$[description]]]></text></BalloonStyle>	
+</Style>	
+<Folder id="folder1"><name><![CDATA[Sculpture]]></name>
+{% for art in arts %}{% if art.lat %}
+<Placemark id="{{art.name}}"><name><![CDATA[{{art.name}}]]></name>
+<address><![CDATA[{% if art.address %}{{art.address}},{% endif %} {{art.city}}, {{art.state}}, {{art.country}}]]></address>
+<Snippet>{% if art.address %}{{art.address}},{% endif %} {{art.city}}, {{art.state}}, {{art.country}}</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center">{% if art.image %}<a href="http://{{ request.META.HTTP_HOST }}{{art.get_absolute_url}}"><img src="http://{{ request.META.HTTP_HOST }}/media/sculpture/small/{{art.image}}_s.jpg" width="98" /></a>{% endif %}</td>
+  <td align="center" style="padding: 10px;">{% if art.image %}<a href="http://{{ request.META.HTTP_HOST }}{{art.get_absolute_url}}" target="_top"><b>{{art.name}}<b/></a>{% else %}<a href="http://{{ request.META.HTTP_HOST }}/sculpture/list.html" target="_top"><b>{{art.name}}</b></a>{% endif %}<br><br>
+  {{art.location}}<br>
+  {{art.city}}, {% if art.state %}{{art.state}},{% endif %} {{art.country}}<br>
+  <br>
+  {{art.year}}<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>{{art.lon}},{{art.lat}},0</coordinates></Point>
+</Placemark>{% endif %}{% endfor %}
+</Folder>
+</Document>
+</kml>
+
