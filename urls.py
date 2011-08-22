@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     (r'^puzzles/', include('puzzles.urls')),
     (r'^jewelry/', include('jewelry.urls')),
     (r'^chairs/', include('chairs.urls')),
+    (r'^books/', include('books.urls')),
     # line below is not needed if app.yaml defines a static_dir
     (r'^media/(.*)$', 'django.views.static.serve', {'document_root': settings.ROOT_PATH + '/media'}),
     )

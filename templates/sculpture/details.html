@@ -77,19 +77,21 @@ $(document).keydown(function(e) {
     <td></td>
   </tr>
   <tr>
-    <td colspan=2><img alt="Charles O. Perry - {{art.name}}" class="pic" src="/media/sculpture/m/{{art.image}}_m.jpg" border="0"></td>
+    <div itemscope itemtype="http://schema.org/Sculpture">
+      <meta itemprop="author" content="Charles O. Perry">
+    <td colspan=2><img itemprop="image" alt="Charles O. Perry - {{art.name}}" class="pic" src="/media/sculpture/m/{{art.image}}_m.jpg" border="0"></td>
 <td valign="top" style="text-align: left; padding-left:10px;">
   <font style="font-size: 1.4em; font-weight: bold; color: white;">
-    {{art.name|safe}}</font><br>
+    <span itemprop="name">{{art.name|safe}}</span></font><br>
   <font style="color: white;"><br>
-    {{art.location|safe}}<br>
-    {{art.city}}, {% if art.state %}{{art.state}},{% endif %} {{art.country}}<br>
+    <span itemprop="contentLocation" itemscpoe itemtype="http://schema.org/Place"><span itemprop="address">{{art.location|safe}}<br>
+    {{art.city}}, {% if art.state %}{{art.state}},{% endif %} {{art.country}}<br></span>
     {{art.material}}<br>
     {{art.size}}<br>
     {{art.year}}<br>
     <br>
 {% if art.geolink %}
-    <a target="_map" href="{{art.geolink}}" alt="Locate Me!"><img src="/media/red-dot.png" title="Locate Me!"></a><br>
+    <a target="_map" itemprop="maps" href="{{art.geolink}}" alt="Locate Me!"><img src="/media/red-dot.png" title="Locate Me!"></a><br></span>
 {% endif %}
 
   </font>

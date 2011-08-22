@@ -17,8 +17,9 @@ a:hover {color: red;}
     </thead>
     <tbody>
       {% for art in arts %}
-      <tr>
-	<td>{% if art.image %}<a href="{{art.get_absolute_url}}">{% endif %}{{art.name}}{% if art.image %}</a>{% endif %}</td>
+      <tr itemscope itemtype="http://schema.org/Sculpture">
+	<meta itemprop="author" content="Charles O. Perry">
+	<td>{% if art.image %}<a itemprop="url" href="{{art.get_absolute_url}}">{% endif %}<span itemprop="name">{{art.name}}</span>{% if art.image %}</a>{% endif %}</td>
 	{% if art.geolink %}
 	<td><a target="_map" href="{{art.geolink}}">{{art.location}}</a></td>
 	{% else %}
