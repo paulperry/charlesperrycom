@@ -12,5 +12,10 @@ indexes:
 
 - kind: Sculpture
   properties:
+  - name: material
+  - name: image
+
+- kind: Sculpture
+  properties:
   - name: style
   - name: image

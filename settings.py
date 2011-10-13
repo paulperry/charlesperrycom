@@ -11,7 +11,7 @@ else:
     DEBUG = True
     PREPEND_WWW = False
 
-TEMPLATE_DEBUG = DEBUG
+#TEMPLATE_DEBUG = DEBUG
 
 import logging
 logging.basicConfig(
