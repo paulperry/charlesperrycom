@@ -2,14 +2,13 @@
 import os
 
 # http://stackoverflow.com/questions/2568257/google-app-engine-python-importerror-no-module-named-django
-if not os.path.exists(os.path.abspath(os.path.dirname(__file__)) + '/non_gae_indicator'):
-    # GAE
+if not os.path.exists(os.getcwd() + '/non_gae_indicator'): # GAE
     DEBUG = False
     PREPEND_WWW = True
-else:
-    # localhost
+else:  # localhost
     DEBUG = True
     PREPEND_WWW = False
+PREPEND_WWW = False
 
 #TEMPLATE_DEBUG = DEBUG
 
@@ -58,7 +57,7 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = '/Users/paulperry/Dropbox/appengine/charlesperrycom/media/'
+MEDIA_ROOT = '/Users/paulperry/Documents/sites/charlesperrycom/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -71,14 +70,22 @@ MEDIA_URL = 'http://www.charlesperry.com/media/'
 ADMIN_MEDIA_PREFIX = '/media/'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '#a1g)i%hz+f)44a0wea9ln!g+#=#tke!0@-k)gt=&m#ec-1234'
+SECRET_KEY = '#a1g)i%hz+f)44a0wea9ln!g+#=#tke!0@-k)gt=&m#ec-1235'
 
 # List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.load_template_source',
-    'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
-)
+TEMPLATE_LOADERS = [
+        ('django.template.loaders.cached.Loader',(
+            'django.template.loaders.filesystem.Loader',
+            'django.template.loaders.app_directories.Loader',
+#            'forum.modules.template_loader.module_templates_loader',
+#            'forum.skins.load_template_source',
+            )),
+    ]
+#TEMPLATE_LOADERS = (
+#    'django.template.loaders.filesystem.load_template_source',
+#    'django.template.loaders.app_directories.load_template_source',
+##     'django.template.loaders.eggs.load_template_source',
+#)
 
 MIDDLEWARE_CLASSES = (
 # http://code.google.com/appengine/docs/python/tools/appstats.html

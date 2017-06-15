@@ -12,7 +12,7 @@ class Chair(db.Model):
     created_on = db.DateTimeProperty(auto_now_add = 1)
 #    created_by = db.UserProperty()
     
-    def __str__(self):        
+    def __str__(self):
         return '%s' %self.name
     
     def get_absolute_url(self):

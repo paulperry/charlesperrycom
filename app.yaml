@@ -1,11 +1,10 @@
-application: charlesperrycom
+application: charlesperrycom-hrd
 version: 4
-runtime: python
+runtime: python27
 api_version: 1
 
 builtins:
-- datastore_admin: on
-- appstats: off
+- appstats: on
 
 handlers:
 - url: /favicon.ico
@@ -39,3 +38,10 @@ skip_files:
 - ^django.zip
 - ^non_gae_indicator
 
+threadsafe:
+- yes
+
+libraries:
+- name: django
+  version: "1.4"
+  

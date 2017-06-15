@@ -9,8 +9,8 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 #http://stackoverflow.com/questions/2568257/google-app-engine-python-importerror-no-module-named-django
 # if not os.path.exists(os.path.abspath(os.path.dirname(__file__)) + '/non_gae_indicator'):
     # GAE
-from google.appengine.dist import use_library
-use_library('django', '1.2')
+#from google.appengine.dist import use_library
+#use_library('django', '1.2')
 
 # check this for debug support
 # http://code.google.com/p/googleappengine/issues/detail?id=308
@@ -49,7 +49,7 @@ def main():
 #    sys.path.insert(1, django_zip_path)
 
   # Set the logging level in the main function
-  logging.getLogger().setLevel(logging.DEBUG)  
+  logging.getLogger().setLevel(logging.DEBUG)
   
   # Create a Django application for WSGI.
   application = django.core.handlers.wsgi.WSGIHandler()
