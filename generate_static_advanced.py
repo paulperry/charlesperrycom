@@ -13,6 +13,7 @@ import time
 import re
 from bs4 import BeautifulSoup
 import csv
+import glob
 
 # Base URL of your Django development server
 BASE_URL = "http://localhost:8000"
@@ -69,6 +70,28 @@ def get_jewelry_items():
                     items.append(row['key_name'])
     return items
 
+def get_chair_pages():
+    """Get chair pages from templates directory"""
+    chair_templates = glob.glob("templates/chairs/*.html")
+    pages = []
+    for template in chair_templates:
+        filename = os.path.basename(template)
+        if filename != 'index.html':  # Skip index page
+            page_name = filename.replace('.html', '')
+            pages.append(page_name)
+    return pages
+
+def get_puzzle_pages():
+    """Get puzzle pages from templates directory"""
+    puzzle_templates = glob.glob("templates/puzzles/*.html")
+    pages = []
+    for template in puzzle_templates:
+        filename = os.path.basename(template)
+        if filename != 'index.html':  # Skip index page
+            page_name = filename.replace('.html', '')
+            pages.append(page_name)
+    return pages
+
 def generate_urls():
     """Generate comprehensive list of URLs to crawl"""
     urls = [
@@ -119,7 +142,22 @@ def generate_urls():
     for item in jewelry_items:
         urls.append(f"/jewelry/{item}/")
     
+    # Add individual chair pages
+    chair_pages = get_chair_pages()
+    for page in chair_pages:
+        urls.append(f"/chairs/{page}")
+    
+    # Add individual puzzle pages
+    puzzle_pages = get_puzzle_pages()
+    for page in puzzle_pages:
+        urls.append(f"/puzzles/{page}")
+    
     print(f"Generated {len(urls)} URLs to crawl")
+    print(f"  - Sculpture items: {len(sculpture_items)}")
+    print(f"  - Jewelry items: {len(jewelry_items)}")
+    print(f"  - Chair pages: {len(chair_pages)}")
+    print(f"  - Puzzle pages: {len(puzzle_pages)}")
+    
     return urls
 
 def copy_media_files(output_dir):
