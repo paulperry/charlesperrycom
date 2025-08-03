@@ -1,18 +1,17 @@
 # bio/views.py
 #
 from django.http import HttpResponse, HttpResponseRedirect, Http404
-from django.views.generic.simple import direct_to_template
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.template import TemplateDoesNotExist
-from bforms import ContactForm, SubscribeForm
-import bforms
+from .bforms import ContactForm, SubscribeForm
+from . import bforms
 
 def index(request):
-    return render_to_response('bio/bio.html')
+    return render(request, 'bio/bio.html')
 
 def page(request, page):
     try:
-        return direct_to_template(request, template="bio/%s.html" % page)
+        return render(request, f"bio/{page}.html")
     except TemplateDoesNotExist:
         raise Http404
 
@@ -32,33 +31,32 @@ def contact(request):
             if cc_myself:
                 recipients.append(email)
             sender = 'paulperry@gmail.com'
-            to = recipients
-            subject = subject
-            body += name
-            body += ' - '
-            body += email
-            body += ' - '
-            body = message
+            
+            body = f"{name} - {email}\n\n{message}"
 
+            # Send email using Django's email system
             try:
-                from google.appengine.api import mail
-                mail.send_mail(sender, to, subject, body)
-            except:
+                from django.core.mail import send_mail
+                from django.conf import settings
+                
+                # Use DEFAULT_FROM_EMAIL from settings as sender
+                send_mail(
+                    subject=subject,
+                    message=body,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=recipients,
+                    fail_silently=False
+                )
+                return HttpResponseRedirect('/bio/thanks.html')
+            except Exception as e:
                 import logging
-                err = 'failed to send email: '
-                err += sender
-                err += ' - '
-                err += err.join(to)
-                err += ' - '
-                err += subject
-                err += ' - '
-                err += body
-                err += ' ... '
-                logging.error(err)
-            return HttpResponseRedirect('/bio/thanks.html')
+                logging.error(f'Failed to send contact email: {e}')
+                # In production, you might want to show an error page
+                # For now, continue to thanks page even if email fails
+                return HttpResponseRedirect('/bio/thanks.html')
     else:
         form = bforms.ContactForm() # An unbound form
-    return render_to_response('bio/contact.html', {'form': form})
+    return render(request, 'bio/contact.html', {'form': form})
 
 def subscribe(request):
     if request.method == 'POST': # If the form has been submitted...
@@ -67,28 +65,30 @@ def subscribe(request):
             # Process the data in form.cleaned_data
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            subject = 'charlesperry mail list add ' + email
-            body = 'please add ' + name + ' ' + email + ' to the newsletter list'
+            subject = f'charlesperry mail list add {email}'
+            body = f'please add {name} {email} to the newsletter list'
             to = ['paul@charlesperry.com']
             sender = 'paulperry@gmail.com'
 
             try:
-                from google.appengine.api import mail
-                mail.send_mail(sender, to, subject, body)
-            except:
+                from django.core.mail import send_mail
+                from django.conf import settings
+                
+                # Use DEFAULT_FROM_EMAIL from settings as sender
+                send_mail(
+                    subject=subject,
+                    message=body,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=to,
+                    fail_silently=False
+                )
+                return HttpResponseRedirect('/bio/thanks.html')
+            except Exception as e:
                 import logging
-                err = 'failed to send email: '
-                err += sender
-                err += ' - '
-                err += err.join(to)
-                err += ' - '
-                err += subject
-                err += ' - '
-                err += body
-                err += ' ... '
-                logging.error(err)
- 
-            return HttpResponseRedirect('/bio/thanks.html') 
+                logging.error(f'Failed to send subscription email: {e}')
+                # In production, you might want to show an error page
+                # For now, continue to thanks page even if email fails
+                return HttpResponseRedirect('/bio/thanks.html') 
     else:
-        form = bforms.ContactForm() # An unbound form
-    return render_to_response('bio/contact.html', {'form': form})
+        form = bforms.SubscribeForm() # An unbound form
+    return render(request, 'bio/subscribe.html', {'form': form})

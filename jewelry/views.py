@@ -1,94 +1,89 @@
 from django.http import HttpResponse, HttpResponseRedirect, Http404
-from django.template import Context
-from jewelry import models
-import bforms
-from django.shortcuts import render_to_response
-from django.views.generic.simple import redirect_to
+from django.shortcuts import render
+from django.conf import settings
 import csv
-import urllib
+import os
 import logging
 
+class JewelryItem:
+    def __init__(self, **kwargs):
+        self.year = kwargs.get('year', '')
+        self.name = kwargs.get('name', '')
+        self.key_name = kwargs.get('key_name', '')
+        self.material = kwargs.get('material', '')
+        self.size = kwargs.get('size', '')
+        self.style = kwargs.get('style', '')
+        self.image = kwargs.get('image', '')
+        self.pk = kwargs.get('key_name', '')  # For compatibility
+    
+    def __str__(self):
+        return self.name
+    
+    def get_absolute_url(self):
+        """Return the URL for this jewelry item's detail page"""
+        return f'/jewelry/{self.pk}/'
+
+def load_jewelry_data():
+    """Load jewelry data from CSV file"""
+    csv_path = os.path.join(settings.MEDIA_ROOT, 'jewelry', 'jewelry.csv')
+    jewelry_items = []
+    
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row.get('name'):  # Skip empty rows
+                    jewelry_items.append(JewelryItem(**row))
+    except Exception as e:
+        logging.error(f'Error loading jewelry CSV: {e}')
+    
+    return jewelry_items
+
+def get_jewelry_by_key(key_name):
+    """Get a specific jewelry item by key_name"""
+    items = load_jewelry_data()
+    for item in items:
+        if item.key_name == key_name:
+            return item
+    return None
+
+def filter_jewelry_by_style(style):
+    """Filter jewelry items by style"""
+    items = load_jewelry_data()
+    return [item for item in items if item.style == style]
+
 def index(request):
-    j = models.Jewelry.all().order('name')
-    return render_to_response('jewelry/index.html', {'jewelry': j})
+    j = sorted(load_jewelry_data(), key=lambda x: x.name)
+    return render(request, 'jewelry/index.html', {'jewelry': j})
 
 def page(request, page): 
-    j = models.Jewelry.all().order('name')
-    return render_to_response('jewelry/' + page, {'jewelry': j})
+    j = sorted(load_jewelry_data(), key=lambda x: x.name)
+    return render(request, f'jewelry/{page}', {'jewelry': j})
 
 def list(request):
-    j = models.Jewelry.all().order('name')
-    return render_to_response('jewelry/list.html', {'jewelry': j})
+    j = sorted(load_jewelry_data(), key=lambda x: x.name)
+    return render(request, 'jewelry/list.html', {'jewelry': j})
  
 def pendants(request):
-    j = models.Jewelry.all().filter('style = ', 'pendant')
-    return render_to_response('jewelry/table.html', {'jewelry': j}, Context({'sidemenu': 'pendants'}))
+    j = filter_jewelry_by_style('pendant')
+    return render(request, 'jewelry/table.html', {'jewelry': j, 'sidemenu': 'pendants'})
 
 def earrings(request):
-    j = models.Jewelry.all().filter('style = ', 'earring')
-    return render_to_response('jewelry/table.html', {'jewelry': j}, Context({'sidemenu': 'earrings'}))
+    j = filter_jewelry_by_style('earring')
+    return render(request, 'jewelry/table.html', {'jewelry': j, 'sidemenu': 'earrings'})
 
 def pins(request):
-    j = models.Jewelry.all().filter('style = ', 'pin')
-    return render_to_response('jewelry/table.html', {'jewelry': j}, Context({'sidemenu': 'pins'}))
+    j = filter_jewelry_by_style('pin')
+    return render(request, 'jewelry/table.html', {'jewelry': j, 'sidemenu': 'pins'})
 
 def other(request):
-    j = models.Jewelry.all().filter('style = ', 'bracelet')
-    return render_to_response('jewelry/table.html', {'jewelry': j}, Context({'sidemenu': 'other'}))
+    j = filter_jewelry_by_style('bracelet')
+    return render(request, 'jewelry/table.html', {'jewelry': j, 'sidemenu': 'other'})
 
 def detail(request, key):
-    j = models.Jewelry.get_by_key_name(key)
-    if j:
-        return render_to_response('jewelry/jewelry.html', {'jewel': j})
-    else:
-        raise Http404
-#        return redirect_to(request, '/jewelry/') # index(request)
+    j = get_jewelry_by_key(key)
+    if not j:
+        raise Http404("Jewelry item not found")
+    return render(request, 'jewelry/jewelry.html', {'jewel': j})
 
-def build(request):
-    # dump the model DB
-    for a in models.Jewelry.all():
-        a.delete()
-    # open the CSV file
-#    f = open('/media/jewelry/jewelry.csv', 'rb') 
-    f = urllib.urlopen('http://www.charlesperry.com/media/jewelry/jewelry.csv') 
-
-    reader = csv.reader(f)
-    titles = reader.next()
-    reader = csv.DictReader(f, titles)
-
-    for row in reader:
-        p = models.Jewelry(name = row['name']
-                          ,material = row['material']
-                          ,size = row['size']
-                          ,style = row['style']
-                          ,image = row['image']
-                          ,key_name = row['key_name']
-                          )
-        p.save()
-
-    bind()
-
-    return list(request)
-
-def bind():
-    js = models.Jewelry.all().order('name')
-    lst = []
-    for j in js:
-        lst.append(str(j))
-
-    j = models.Jewelry.all().filter('__key__ >', j.key()).get()
-
-    for i, j in enumerate(js):
-         if i == 0:
-              j.next = str(lst[1])
-              j.prev = str(lst[len(lst)-1])
-         elif i == len(lst)-1:
-              j.next = str(lst[0])
-              j.prev = str(lst[i-1])
-         else:
-              j.next = str(lst[i+1])
-              j.prev = str(lst[i-1])
-         j.save()
-
-    return
 

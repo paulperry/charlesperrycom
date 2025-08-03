@@ -1,32 +1,23 @@
 # sculpture urls.py
 #
-from django.conf.urls.defaults import *
+from django.urls import path, re_path
+from . import views
 
-urlpatterns = patterns('sculpture.views',
-    (r'^$', 'index_style'),
-    (r'^create/$', 'create'),
-    (r'^build/$', 'build'),
-    (r'^bind/$', 'bind'),
-    (r'^all/$', 'all'),
-    (r'^tour/$', 'tour'),
-    (r'^perry\.kml$', 'genkml'),
-    (r'^list/$', 'list'),
-    (r'^style/$', 'style'),
-    (r'^map/$', 'page', {'page': 'map'}),
-    (r'^style/(?P<art_style>planar)/$', 'art_style'),
-    (r'^style/(?P<art_style>topological)/$', 'art_style'),
-    (r'^style/(?P<art_style>ribbed)/$', 'art_style'),
-    (r'^style/(?P<art_style>solid)/$', 'art_style'),
-    (r'^material/$', 'material'),
-    (r'^material/(?P<art_material>aluminum)/$', 'aluminum'),
-    (r'^material/(?P<art_material>bronze)/$', 'bronze'),
-    (r'^material/(?P<art_material>other)/$', 'other'),
-    (r'^material/(?P<art_material>steel)/$', 'steel'),
-    (r'^material/(?P<art_material>stainlesssteel)/$', 'stainlesssteel'),
-    (r'^(?P<page>slideshow$)$', 'page'),
-    (r'^(?P<key_name>[\w-]+)$', 'detail'),
-#    (r'^(?P<page>[^\.^/]+\.html)$', 'page'),
-)
+urlpatterns = [
+    path('', views.index_style, name='sculpture_index'),
+    path('all/', views.all, name='sculpture_all'),
+    path('tour/', views.tour, name='sculpture_tour'),
+    re_path(r'^perry\.kml$', views.genkml, name='sculpture_kml'),
+    path('list/', views.list, name='sculpture_list'),
+    path('style/', views.style, name='sculpture_style'),
+    path('map/', views.page, {'page': 'map'}, name='sculpture_map'),
+    path('style/<str:art_style>/', views.art_style, name='sculpture_art_style'),
+    path('material/', views.material, name='sculpture_material'),
+    path('material/<str:art_material>/', views.material_view, name='sculpture_material_view'),
+    path('slideshow/', views.page, {'page': 'slideshow'}, name='sculpture_slideshow'),
+    path('slideshow', views.page, {'page': 'slideshow'}, name='sculpture_slideshow_no_slash'),
+    re_path(r'^(?P<key_name>[\w-]+)/$', views.detail, name='sculpture_detail'),
+]
 
 
 

@@ -1,23 +1,26 @@
 # jewelry/models.py
 
-from google.appengine.ext import db
-from django import forms
+from django.db import models
 
-class Jewelry(db.Model):
-    name = db.StringProperty()
-    material = db.StringProperty()
-    size = db.StringProperty()
-    style = db.StringProperty()
-    image = db.StringProperty()
-#    created_on = db.DateTimeProperty(auto_now_add = 1)
-    prev = db.StringProperty()
-    next = db.StringProperty()
+class Jewelry(models.Model):
+    name = models.CharField(max_length=200)
+    material = models.CharField(max_length=100, blank=True)
+    size = models.CharField(max_length=100, blank=True)
+    style = models.CharField(max_length=100, blank=True)
+    image = models.CharField(max_length=200, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    prev = models.CharField(max_length=200, blank=True)
+    next = models.CharField(max_length=200, blank=True)
+    
+    class Meta:
+        ordering = ['name']
+        verbose_name_plural = "Jewelry"
     
     def __str__(self):        
-        return '%s' %self.key().id_or_name()
+        return self.name or str(self.pk)
     
     def get_absolute_url(self):
-        return '/jewelry/%s' % str(self)
+        return f'/jewelry/{self.pk}'
 
 
    

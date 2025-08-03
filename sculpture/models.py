@@ -1,37 +1,42 @@
-from google.appengine.ext import db
-#from django import newforms as forms
+from django.db import models
 
-class Sculpture(db.Model):
-#    year =  db.IntegerProperty()
-    year =  db.StringProperty()
-    name = db.StringProperty()
-    location = db.StringProperty()
-    address =  db.StringProperty()
-    city =  db.StringProperty()
-    state =  db.StringProperty()
-    country =  db.StringProperty()
-    material =  db.StringProperty()
-    size =  db.StringProperty()
-    style =  db.StringProperty(required=True, choices=['planar','topological','ribbed','solid'])
-    image =  db.StringProperty()
-#    geopt = GeoPtProperty()
-    lat =  db.StringProperty()
-    lon =  db.StringProperty()
-    geolink = db.StringProperty()
-#    geolink = db.LinkProperty()
-    visible = db.StringProperty() # geo link has visible sculpture in it
-#    created_on = db.DateTimeProperty(auto_now_add = 1)
-#    created_by = db.UserProperty()
-    prev_style = db.StringProperty()
-    next_style = db.StringProperty()
-    prev_material = db.StringProperty()
-    next_material = db.StringProperty()
+class Sculpture(models.Model):
+    STYLE_CHOICES = [
+        ('planar', 'Planar'),
+        ('topological', 'Topological'),
+        ('ribbed', 'Ribbed'),
+        ('solid', 'Solid'),
+    ]
+    
+    year = models.CharField(max_length=10, blank=True)
+    name = models.CharField(max_length=200)
+    location = models.CharField(max_length=200, blank=True)
+    address = models.CharField(max_length=200, blank=True)
+    city = models.CharField(max_length=100, blank=True)
+    state = models.CharField(max_length=50, blank=True)
+    country = models.CharField(max_length=50, blank=True)
+    material = models.CharField(max_length=100, blank=True)
+    size = models.CharField(max_length=100, blank=True)
+    style = models.CharField(max_length=20, choices=STYLE_CHOICES)
+    image = models.CharField(max_length=200, blank=True)
+    lat = models.CharField(max_length=20, blank=True)
+    lon = models.CharField(max_length=20, blank=True)
+    geolink = models.URLField(blank=True)
+    visible = models.CharField(max_length=1, blank=True, default='y')
+    prev_style = models.CharField(max_length=200, blank=True)
+    next_style = models.CharField(max_length=200, blank=True)
+    prev_material = models.CharField(max_length=200, blank=True)
+    next_material = models.CharField(max_length=200, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):        
-        return '%s' %self.key().id_or_name()
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name or str(self.pk)
     
     def get_absolute_url(self):
-        return '/sculpture/%s' % str(self)
+        return f'/sculpture/{self.pk}'
 
 
    

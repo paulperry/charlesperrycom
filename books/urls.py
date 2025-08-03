@@ -1,15 +1,11 @@
 # books/urls.py
-from django.conf.urls.defaults import *
+from django.urls import path, re_path
+from . import views
 
-#urlpatterns = patterns('django.views.generic.simple',
-#    (r'^$', 'direct_to_template', {'template': 'books/index.html'}),
-#    (r'(.+)\.html$', 'direct_to_template'),
-#)
-
-urlpatterns = patterns('books.views',
-    (r'^$', 'index'),
-    (r'^(?P<page>[\w-]+)$', 'page'),
-)
+urlpatterns = [
+    path('', views.index, name='books_index'),
+    re_path(r'^(?P<page>[\w-]+)$', views.page, name='books_page'),
+]
 
 
 

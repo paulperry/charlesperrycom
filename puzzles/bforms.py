@@ -1,13 +1,12 @@
 # puzzles/bforms.py
 
-#from google.appengine.ext.db import djangoforms
-import djangoforms
 from django import forms
-import models
+from . import models
 
-class PuzzlesForm(djangoforms.ModelForm):
+class PuzzleForm(forms.ModelForm):
     class Meta:
-        model = models.Jewelry
+        model = models.Puzzle
+        fields = '__all__'
         
 
 

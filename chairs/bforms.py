@@ -1,13 +1,12 @@
 # chairs/bforms.py
 
-#from google.appengine.ext.db import djangoforms
-import djangoforms
 from django import forms
-import models
+from . import models
 
-class ChairForm(djangoforms.ModelForm):
+class ChairForm(forms.ModelForm):
     class Meta:
         model = models.Chair
+        fields = '__all__'
         
 
 

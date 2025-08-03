@@ -1,16 +1,19 @@
 # bio/models.py
 
-from google.appengine.ext import db
-from django import forms
+from django.db import models
 
-class Bio(db.Model):
-    name = db.StringProperty()
+class Bio(models.Model):
+    name = models.CharField(max_length=200)
+    created_on = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ['name']
     
     def __str__(self):
-        return '%s' %self.name
+        return self.name
     
     def get_absolute_url(self):
-        return '/poll/%s/' % self.key()
+        return f'/bio/{self.pk}/'
     
 
 

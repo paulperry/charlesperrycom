@@ -1,14 +1,12 @@
 # art/bforms.py 
 
-#from google.appengine.ext.db import djangoforms
-import djangoforms
 from django import forms
-import models
+from . import models
 
-class SculptureForm(djangoforms.ModelForm):
+class SculptureForm(forms.ModelForm):
     class Meta:
         model = models.Sculpture
-        exclude = ['created_by']
+        exclude = ['created_on', 'prev_style', 'next_style', 'prev_material', 'next_material']
         
 
 

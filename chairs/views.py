@@ -1,24 +1,20 @@
 from django.http import HttpResponse, HttpResponseRedirect, Http404
-from django.views.generic.simple import direct_to_template
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.template import TemplateDoesNotExist
-import models
-import bforms
 
 def index(request):
-    return render_to_response('chairs/index.html')
+    return render(request, 'chairs/index.html')
 
 def page(request, page): 
     try:
-        return direct_to_template(request, template="chairs/%s.html" % page)
+        return render(request, f"chairs/{page}.html")
     except TemplateDoesNotExist:
         raise Http404
 
-#    return render_to_response('chairs/' + page)
-
 def detail(request, key):
-    chair = models.Chair.get(key)
-    return render_to_response('chairs/chair.html', {'chair': chair})
+    # Simple static chair detail view without database
+    # The template will handle showing chair details based on the key
+    return render(request, 'chairs/chair.html', {'key': key})
 
 
 

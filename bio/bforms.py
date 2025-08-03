@@ -1,13 +1,12 @@
 # bio/bforms.py
 
-#from google.appengine.ext.db import djangoforms
-import djangoforms 
 from django import forms
-import models
+from . import models
 
-class BioForm(djangoforms.ModelForm):
+class BioForm(forms.ModelForm):
     class Meta:
         model = models.Bio
+        fields = '__all__'
 
 class ContactForm(forms.Form):
     name =    forms.CharField()

@@ -1,13 +1,12 @@
 # jewelry/bforms.py
 
-#from google.appengine.ext.db import djangoforms
-import djangoforms
 from django import forms
-import models
+from . import models
 
-class JewelryForm(djangoforms.ModelForm):
+class JewelryForm(forms.ModelForm):
     class Meta:
         model = models.Jewelry
+        fields = '__all__'
         
 
 

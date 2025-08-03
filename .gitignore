@@ -1,3 +1,25 @@
 *.pyc
 *.*~
 .DS_Store
+
+# Database files (not used - we use CSV files)
+db.sqlite3
+*.db
+
+# Environment variables
+.env
+
+# Django static files
+staticfiles/
+static/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python virtual environment
+venv/
+env/
+__pycache__/

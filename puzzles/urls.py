@@ -1,9 +1,10 @@
-from django.conf.urls.defaults import *
+from django.urls import path, re_path
+from . import views
 
-urlpatterns = patterns('puzzles.views',
-    (r'^$', 'index'),
-    (r'^(?P<page>[\w-]+)$', 'page'),
-)
+urlpatterns = [
+    path('', views.index, name='puzzles_index'),
+    re_path(r'^(?P<page>[\w-]+)$', views.page, name='puzzles_page'),
+]
 
 
 
