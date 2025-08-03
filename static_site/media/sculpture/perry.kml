@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="charlesperry_kml">
+<atom:author><atom:name>Charles O. Perry</atom:name></atom:author>
+<atom:link href="http://www.charlesperry.com" />
+<name><![CDATA[Charles O. Perry]]></name>
+<Snippet>Sculptor</Snippet>
+<description><![CDATA[Charles O. Perry Sculptures around the World]]></description>
+<visibility>1</visibility>
+<open>0</open>
+<StyleMap id="style2">
+  <Pair><key>normal</key><styleUrl>#style2_normal</styleUrl></Pair>
+  <Pair><key>highlight</key><styleUrl>#style2_highlight</styleUrl></Pair>
+</StyleMap>
+<Style id="style2_normal">
+  <IconStyle><color>FFFFFFFF</color><scale>0.6</scale>
+  <Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon>
+  <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+  </IconStyle>
+  <LabelStyle><color>FFFFFFFF</color><scale>0.6</scale></LabelStyle>
+  <BalloonStyle><bgColor>FF000000</bgColor><text><![CDATA[$[description]]]></text></BalloonStyle>
+</Style>	
+<Style id="style2_highlight">
+  <IconStyle><color>FFFFFFFF</color><scale>0.6</scale>
+  <Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon>
+  <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+  </IconStyle>
+  <LabelStyle><color>FFFFFFFF</color><scale>0.6</scale></LabelStyle>
+  <BalloonStyle><bgColor>FF000000</bgColor><text><![CDATA[$[description]]]></text></BalloonStyle>
+</Style>
+<Folder id="folder1"><name><![CDATA[Sculpture]]></name>
+
+<Placemark id="Arch of Janus"><name><![CDATA[Arch of Janus]]></name>
+<address><![CDATA[114 John St, Greenwich, CT, USA]]></address>
+<Snippet>114 John St, Greenwich, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/arch-of-janus"><img src="http://www.charlesperry.com/media/sculpture/small/arch_of_janus_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/arch-of-janus" target="_top"><b>Arch of Janus<b/></a><br><br>
+  Seven Bridges Foundation<br>
+  Greenwich, CT, USA<br>
+  <br>
+  1994<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.684888,41.095157,0</coordinates></Point>
+</Placemark>
+<Placemark id="Blade"><name><![CDATA[Blade]]></name>
+<address><![CDATA[829 Riverside Ave, Jacksonville, FL, USA]]></address>
+<Snippet>829 Riverside Ave, Jacksonville, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/blade"><img src="http://www.charlesperry.com/media/sculpture/small/Blade_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/blade" target="_top"><b>Blade<b/></a><br><br>
+  Cummer Museum of Art &amp; Gardens<br>
+  Jacksonville, FL, USA<br>
+  <br>
+  1990<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-81.676741,30.314909,0</coordinates></Point>
+</Placemark>
+<Placemark id="Blade"><name><![CDATA[Blade]]></name>
+<address><![CDATA[ London, , UK]]></address>
+<Snippet> London, , UK</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Blade</b></a><br><br>
+  Ponti Residence<br>
+  London,  UK<br>
+  <br>
+  2000<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-0.12634,51.50009,0</coordinates></Point>
+</Placemark>
+<Placemark id="Broken Symmetry"><name><![CDATA[Broken Symmetry]]></name>
+<address><![CDATA[ West Hartford, CT, USA]]></address>
+<Snippet> West Hartford, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/broken-symmetry"><img src="http://www.charlesperry.com/media/sculpture/small/broken_symmetry_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/broken-symmetry" target="_top"><b>Broken Symmetry<b/></a><br><br>
+  South Main Street<br>
+  West Hartford, CT, USA<br>
+  <br>
+  2006<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.741846,41.759108,0</coordinates></Point>
+</Placemark>
+<Placemark id="Bronze Loops"><name><![CDATA[Bronze Loops]]></name>
+<address><![CDATA[801 South Figueroa Street, Los Angeles, CA, USA]]></address>
+<Snippet>801 South Figueroa Street, Los Angeles, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Bronze Loops</b></a><br><br>
+  Blue Cross<br>
+  Los Angeles, CA, USA<br>
+  <br>
+  1977<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-118.261712,34.047648,0</coordinates></Point>
+</Placemark>
+<Placemark id="Bullet Proof Campus Art"><name><![CDATA[Bullet Proof Campus Art]]></name>
+<address><![CDATA[Penrose Library, Denver, CO, USA]]></address>
+<Snippet>Penrose Library, Denver, CO, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/bullet-proof-campus-art"><img src="http://www.charlesperry.com/media/sculpture/small/bullet_proof_campus_art_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/bullet-proof-campus-art" target="_top"><b>Bullet Proof Campus Art<b/></a><br><br>
+  University of Denver<br>
+  Denver, CO, USA<br>
+  <br>
+  1973<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-104.962309,39.677541,0</coordinates></Point>
+</Placemark>
+<Placemark id="Calligraphic Mobius"><name><![CDATA[Calligraphic Mobius]]></name>
+<address><![CDATA[U.S. Patent and Trademark Office, Arlington, VA, USA]]></address>
+<Snippet>U.S. Patent and Trademark Office, Arlington, VA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/calligraphic-mobius"><img src="http://www.charlesperry.com/media/sculpture/small/calligraphic_mobius_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/calligraphic-mobius" target="_top"><b>Calligraphic Mobius<b/></a><br><br>
+  Crystal City<br>
+  Arlington, VA, USA<br>
+  <br>
+  1986<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-77.04919,38.854714,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cantata"><name><![CDATA[Cantata]]></name>
+<address><![CDATA[ Los Angeles, CA, USA]]></address>
+<Snippet> Los Angeles, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/cantata"><img src="http://www.charlesperry.com/media/sculpture/small/cantata_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/art/cantata" target="_top"><b>Cantata<b/></a><br><br>
+  Security Pacific Bank<br>
+  Los Angeles, CA, USA<br>
+  <br>
+  1973<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-118.253049,34.053477,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cassini"><name><![CDATA[Cassini]]></name>
+<address><![CDATA[Karralyka Centre, Mines Rd, Ringwood VIC 3134, Ringwood, , Australia]]></address>
+<Snippet>Karralyka Centre, Mines Rd, Ringwood VIC 3134, Ringwood, , Australia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/cassini"><img src="http://www.charlesperry.com/media/sculpture/small/Cassini_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/cassini" target="_top"><b>Cassini<b/></a><br><br>
+  Civic Arts Complex<br>
+  Ringwood,  Australia<br>
+  <br>
+  1978<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>145.24303,-37.808634,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cassini"><name><![CDATA[Cassini]]></name>
+<address><![CDATA[Beacon Harbor Parkway in East Moline, Northbrook, IL, USA]]></address>
+<Snippet>Beacon Harbor Parkway in East Moline, Northbrook, IL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Cassini</b></a><br><br>
+  Homart Corporation<br>
+  Northbrook, IL, USA<br>
+  <br>
+  1976<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-90.443401,41.524387,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cassini"><name><![CDATA[Cassini]]></name>
+<address><![CDATA[Alumni Memorial Hall 525 South State Street, Ann Arbor, MI, USA]]></address>
+<Snippet>Alumni Memorial Hall 525 South State Street, Ann Arbor, MI, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/cassini-plexiglas"><img src="http://www.charlesperry.com/media/sculpture/small/cassini_plexiglass_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/cassini-plexiglas" target="_top"><b>Cassini<b/></a><br><br>
+  University of Michigan Museum of Art<br>
+  Ann Arbor, MI, USA<br>
+  <br>
+  1970<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-83.739896,42.275408,0</coordinates></Point>
+</Placemark>
+<Placemark id="Color Shaft"><name><![CDATA[Color Shaft]]></name>
+<address><![CDATA[Sunvalley Mall, Concord, CA, USA]]></address>
+<Snippet>Sunvalley Mall, Concord, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Color Shaft</b></a><br><br>
+  Taubman Corp.<br>
+  Concord, CA, USA<br>
+  <br>
+  1991<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-122.06133,37.96868,0</coordinates></Point>
+</Placemark>
+<Placemark id="Conic Madrigal"><name><![CDATA[Conic Madrigal]]></name>
+<address><![CDATA[5 Milligan St, Perth, WA, Australia]]></address>
+<Snippet>5 Milligan St, Perth, WA, Australia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/conic-madrigal"><img src="http://www.charlesperry.com/media/sculpture/small/conic_madrigal_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/conic-madrigal" target="_top"><b>Conic Madrigal<b/></a><br><br>
+  I.K.J.V.<br>
+  Perth, WA, Australia<br>
+  <br>
+  1991<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>115.851057,-31.952596,0</coordinates></Point>
+</Placemark>
+<Placemark id="Continuum"><name><![CDATA[Continuum]]></name>
+<address><![CDATA[114 John St,, Washington, D.C., USA]]></address>
+<Snippet>114 John St,, Washington, D.C., USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/continuum"><img src="http://www.charlesperry.com/media/sculpture/small/Continuum_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/continuum" target="_top"><b>Continuum<b/></a><br><br>
+  National Air &amp; Space Museum<br>
+  Washington, D.C., USA<br>
+  <br>
+  1976<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-77.0198,38.887782,0</coordinates></Point>
+</Placemark>
+<Placemark id="Continuum II"><name><![CDATA[Continuum II]]></name>
+<address><![CDATA[6 Raffles Boulevard, Singapore, , Singapore]]></address>
+<Snippet>6 Raffles Boulevard, Singapore, , Singapore</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/continuum-2"><img src="http://www.charlesperry.com/media/sculpture/small/TripleKnot_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/continuum-2" target="_top"><b>Continuum II<b/></a><br><br>
+  Marina Center Holdings<br>
+  Singapore,  Singapore<br>
+  <br>
+  1986<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>103.857563,1.291195,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cruciform"><name><![CDATA[Cruciform]]></name>
+<address><![CDATA[10 South Broadway, St. Louis, MO, USA]]></address>
+<Snippet>10 South Broadway, St. Louis, MO, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Cruciform</b></a><br><br>
+  Equitable Life<br>
+  St. Louis, MO, USA<br>
+  <br>
+  1972<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-90.189978,38.624754,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cruciform"><name><![CDATA[Cruciform]]></name>
+<address><![CDATA[ Hanover, NH, USA]]></address>
+<Snippet> Hanover, NH, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Cruciform</b></a><br><br>
+  Dartmouth College &lt;br&gt; Hood Museum of Art <br>
+  Hanover, NH, USA<br>
+  <br>
+  1974<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.287545,43.701656,0</coordinates></Point>
+</Placemark>
+<Placemark id="Cube Octa"><name><![CDATA[Cube Octa]]></name>
+<address><![CDATA[Stoneridge Mall, Pleasanton, CA, USA]]></address>
+<Snippet>Stoneridge Mall, Pleasanton, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Cube Octa</b></a><br><br>
+  Taubman Corporation<br>
+  Pleasanton, CA, USA<br>
+  <br>
+  1979<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-121.928855,37.695269,0</coordinates></Point>
+</Placemark>
+<Placemark id="D2D"><name><![CDATA[D2D]]></name>
+<address><![CDATA[Fayerweather Hill Rd, Hanover, NH, USA]]></address>
+<Snippet>Fayerweather Hill Rd, Hanover, NH, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/d2d"><img src="http://www.charlesperry.com/media/sculpture/small/D2D_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/d2d" target="_top"><b>D2D<b/></a><br><br>
+  Dartmouth College<br>
+  Hanover, NH, USA<br>
+  <br>
+  1975<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.286941,43.705399,0</coordinates></Point>
+</Placemark>
+<Placemark id="Double Knot"><name><![CDATA[Double Knot]]></name>
+<address><![CDATA[21001 Van Born Rd, Taylor, MI, USA]]></address>
+<Snippet>21001 Van Born Rd, Taylor, MI, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/bouble-knot-masco"><img src="http://www.charlesperry.com/media/sculpture/small/DoubleKnotMasco_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/bouble-knot-masco" target="_top"><b>Double Knot<b/></a><br><br>
+  Masco Corp.<br>
+  Taylor, MI, USA<br>
+  <br>
+  1991<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-83.241956,42.2676065,0</coordinates></Point>
+</Placemark>
+<Placemark id="Double Knot I"><name><![CDATA[Double Knot I]]></name>
+<address><![CDATA[Robert E. Penland Administration and Classroom Building, Aiken, SC, USA]]></address>
+<Snippet>Robert E. Penland Administration and Classroom Building, Aiken, SC, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Double Knot I</b></a><br><br>
+  University of South Carolina<br>
+  Aiken, SC, USA<br>
+  <br>
+  1974<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-81.766827,33.573379,0</coordinates></Point>
+</Placemark>
+<Placemark id="Double Knot I"><name><![CDATA[Double Knot I]]></name>
+<address><![CDATA[ Cambridge, MA, USA]]></address>
+<Snippet> Cambridge, MA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Double Knot I</b></a><br><br>
+  Harvard Business School<br>
+  Cambridge, MA, USA<br>
+  <br>
+  1976<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-71.12287,42.3674563,0</coordinates></Point>
+</Placemark>
+<Placemark id="Double Knot II"><name><![CDATA[Double Knot II]]></name>
+<address><![CDATA[ Uitikon, , Switzerland]]></address>
+<Snippet> Uitikon, , Switzerland</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Double Knot II</b></a><br><br>
+  Cassani Residence<br>
+  Uitikon,  Switzerland<br>
+  <br>
+  1992<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>8.45398,47.37031,0</coordinates></Point>
+</Placemark>
+<Placemark id="Double Ribbed Mace"><name><![CDATA[Double Ribbed Mace]]></name>
+<address><![CDATA[31 Commerce St, East Haven, CT, USA]]></address>
+<Snippet>31 Commerce St, East Haven, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Double Ribbed Mace</b></a><br><br>
+  Thermatool<br>
+  East Haven, CT, USA<br>
+  <br>
+  1990<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.884537,41.249508,0</coordinates></Point>
+</Placemark>
+<Placemark id="Dual Universe"><name><![CDATA[Dual Universe]]></name>
+<address><![CDATA[50 Raffles Place, Battery Road, Singapore, Singapore, Singapore]]></address>
+<Snippet>50 Raffles Place, Battery Road, Singapore, Singapore, Singapore</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/dual-universe"><img src="http://www.charlesperry.com/media/sculpture/small/DualUni_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/dual-universe" target="_top"><b>Dual Universe<b/></a><br><br>
+  Shell Plaza<br>
+  Singapore, Singapore, Singapore<br>
+  <br>
+  1994<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>103.851896,1.285065,0</coordinates></Point>
+</Placemark>
+<Placemark id="Duality"><name><![CDATA[Duality]]></name>
+<address><![CDATA[50 North Laura Street, Jacksonville, FL, USA]]></address>
+<Snippet>50 North Laura Street, Jacksonville, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/duality-barnett"><img src="http://www.charlesperry.com/media/sculpture/small/DualityBarr_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/duality-barnett" target="_top"><b>Duality<b/></a><br><br>
+  Barnett Center<br>
+  Jacksonville, FL, USA<br>
+  <br>
+  1990<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-81.65965,30.326916,0</coordinates></Point>
+</Placemark>
+<Placemark id="Early Mace"><name><![CDATA[Early Mace]]></name>
+<address><![CDATA[Sun Trust Plaza, 303 Peachtree St NE, Atlanta, GA, USA]]></address>
+<Snippet>Sun Trust Plaza, 303 Peachtree St NE, Atlanta, GA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/early-mace"><img src="http://www.charlesperry.com/media/sculpture/small/early-mace_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/early-mace" target="_top"><b>Early Mace<b/></a><br><br>
+  Peachtree Center<br>
+  Atlanta, GA, USA<br>
+  <br>
+  1971<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-84.386845,33.763018,0</coordinates></Point>
+</Placemark>
+<Placemark id="Eclipse"><name><![CDATA[Eclipse]]></name>
+<address><![CDATA[5 Embarcadero Center, San Francisco, CA, USA]]></address>
+<Snippet>5 Embarcadero Center, San Francisco, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/eclipse"><img src="http://www.charlesperry.com/media/sculpture/small/Eclipse_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/eclipse" target="_top"><b>Eclipse<b/></a><br><br>
+  Hyatt Regency Hotel &lt;br&gt; Embarcadero Center<br>
+  San Francisco, CA, USA<br>
+  <br>
+  1973<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-122.395814,37.794279,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ellipsoid"><name><![CDATA[Ellipsoid]]></name>
+<address><![CDATA[ Riyadh, , Saudi Arabia]]></address>
+<Snippet> Riyadh, , Saudi Arabia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Ellipsoid</b></a><br><br>
+  Ministry of Defense and Air<br>
+  Riyadh,  Saudi Arabia<br>
+  <br>
+  1976<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>46.71614,24.668927,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ellipsoid VI"><name><![CDATA[Ellipsoid VI]]></name>
+<address><![CDATA[ Fresno, CA, USA]]></address>
+<Snippet> Fresno, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/ellipsoid6"><img src="http://www.charlesperry.com/media/sculpture/small/ellipsoid6-2_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/ellipsoid6" target="_top"><b>Ellipsoid VI<b/></a><br><br>
+  Fulton Mall<br>
+  Fresno, CA, USA<br>
+  <br>
+  1964<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-119.788663,36.733232,0</coordinates></Point>
+</Placemark>
+<Placemark id="Enigma"><name><![CDATA[Enigma]]></name>
+<address><![CDATA[1970 Broadway, Oakland, CA, USA]]></address>
+<Snippet>1970 Broadway, Oakland, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Enigma</b></a><br><br>
+   World Savings and Loan Association<br>
+  Oakland, CA, USA<br>
+  <br>
+  1981<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-122.26821,37.808811,0</coordinates></Point>
+</Placemark>
+<Placemark id="Equinox"><name><![CDATA[Equinox]]></name>
+<address><![CDATA[12893 Inwood Rd E, Dallas, TX, USA]]></address>
+<Snippet>12893 Inwood Rd E, Dallas, TX, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/equinox"><img src="http://www.charlesperry.com/media/sculpture/small/Equinox_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/equinox" target="_top"><b>Equinox<b/></a><br><br>
+  Lincoln Centre<br>
+  Dallas, TX, USA<br>
+  <br>
+  1982<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-96.81766,32.92367,0</coordinates></Point>
+</Placemark>
+<Placemark id="Four Orbits"><name><![CDATA[Four Orbits]]></name>
+<address><![CDATA[1001 Wilshire, Oklahoma City, OK, USA]]></address>
+<Snippet>1001 Wilshire, Oklahoma City, OK, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/four-orbits"><img src="http://www.charlesperry.com/media/sculpture/small/oklahoma_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/four-orbits" target="_top"><b>Four Orbits<b/></a><br><br>
+  Oklahoma City<br>
+  Oklahoma City, OK, USA<br>
+  <br>
+  2004<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-97.5309985,35.5513832,0</coordinates></Point>
+</Placemark>
+<Placemark id="Hanging Star"><name><![CDATA[Hanging Star]]></name>
+<address><![CDATA[777 Main St., Fort Worth, TX, USA]]></address>
+<Snippet>777 Main St., Fort Worth, TX, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Hanging Star</b></a><br><br>
+  Woodbine Development Corp. &lt;br&gt; Continental Plaza<br>
+  Fort Worth, TX, USA<br>
+  <br>
+  1982<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-97.330131,32.752721,0</coordinates></Point>
+</Placemark>
+<Placemark id="Harmony"><name><![CDATA[Harmony]]></name>
+<address><![CDATA[69 Jewell Street, Hartford, CT, USA]]></address>
+<Snippet>69 Jewell Street, Hartford, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/harmony"><img src="http://www.charlesperry.com/media/sculpture/small/Harmony_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/harmony" target="_top"><b>Harmony<b/></a><br><br>
+  Bushnell Park<br>
+  Hartford, CT, USA<br>
+  <br>
+  1990<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.678552,41.765062,0</coordinates></Point>
+</Placemark>
+<Placemark id="Helix Mobius Mace"><name><![CDATA[Helix Mobius Mace]]></name>
+<address><![CDATA[23rd &amp; Crystal Drive South, Arlington, VA, USA]]></address>
+<Snippet>23rd &amp; Crystal Drive South, Arlington, VA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Helix Mobius Mace</b></a><br><br>
+  Crystal City<br>
+  Arlington, VA, USA<br>
+  <br>
+  1988<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-77.049297,38.853021,0</coordinates></Point>
+</Placemark>
+<Placemark id="Hovering"><name><![CDATA[Hovering]]></name>
+<address><![CDATA[8501 IBM Dr, Charlotte, NC, USA]]></address>
+<Snippet>8501 IBM Dr, Charlotte, NC, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/hovering"><img src="http://www.charlesperry.com/media/sculpture/small/Hovering_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/hovering" target="_top"><b>Hovering<b/></a><br><br>
+  IBM University Research Park<br>
+  Charlotte, NC, USA<br>
+  <br>
+  1981<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-80.767464,35.308957,0</coordinates></Point>
+</Placemark>
+<Placemark id="Hyperbolic Ribbed Mace"><name><![CDATA[Hyperbolic Ribbed Mace]]></name>
+<address><![CDATA[401 Main St, Norwalk, CT, USA]]></address>
+<Snippet>401 Main St, Norwalk, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/hyperbolic-ribbed-mace"><img src="http://www.charlesperry.com/media/sculpture/small/ribbedmace_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/hyperbolic-ribbed-mace" target="_top"><b>Hyperbolic Ribbed Mace<b/></a><br><br>
+  Merritt 7 Building # 4<br>
+  Norwalk, CT, USA<br>
+  <br>
+  1998<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.427078,41.148066,0</coordinates></Point>
+</Placemark>
+<Placemark id="Hyperbolic Ribbed Mace II"><name><![CDATA[Hyperbolic Ribbed Mace II]]></name>
+<address><![CDATA[400 Metro Place North,, Dublin, OH, USA]]></address>
+<Snippet>400 Metro Place North,, Dublin, OH, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Hyperbolic Ribbed Mace II</b></a><br><br>
+  Linclay Corp.<br>
+  Dublin, OH, USA<br>
+  <br>
+  1987<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-83.127497,40.096077,0</coordinates></Point>
+</Placemark>
+<Placemark id="Icosaspirale"><name><![CDATA[Icosaspirale]]></name>
+<address><![CDATA[1 Maritime Plaza, San Francisco, CA, USA]]></address>
+<Snippet>1 Maritime Plaza, San Francisco, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/icosaspirale"><img src="http://www.charlesperry.com/media/sculpture/small/Icosaspirale_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/icosaspirale" target="_top"><b>Icosaspirale<b/></a><br><br>
+  Alcoa Building<br>
+  San Francisco, CA, USA<br>
+  <br>
+  1966<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-122.399596,37.795319,0</coordinates></Point>
+</Placemark>
+<Placemark id="Indiana Arc"><name><![CDATA[Indiana Arc]]></name>
+<address><![CDATA[1133 E 7th St, Bloomington, IN, USA]]></address>
+<Snippet>1133 E 7th St, Bloomington, IN, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/indiana-arc"><img src="http://www.charlesperry.com/media/sculpture/small/IndianaArc_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/indiana-arc" target="_top"><b>Indiana Arc<b/></a><br><br>
+  Indiana U. Museum of Art<br>
+  Bloomington, IN, USA<br>
+  <br>
+  1995<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-86.520038,39.168745,0</coordinates></Point>
+</Placemark>
+<Placemark id="Intersection"><name><![CDATA[Intersection]]></name>
+<address><![CDATA[2100 E Grand Ave, El Segundo, CA, USA]]></address>
+<Snippet>2100 E Grand Ave, El Segundo, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/intersection"><img src="http://www.charlesperry.com/media/sculpture/small/intersection_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/intersection" target="_top"><b>Intersection<b/></a><br><br>
+  Computer Sciences Corporation<br>
+  El Segundo, CA, USA<br>
+  <br>
+  1983<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-118.390469,33.918913,0</coordinates></Point>
+</Placemark>
+<Placemark id="Kinetic Tetrahedra"><name><![CDATA[Kinetic Tetrahedra]]></name>
+<address><![CDATA[2 Executive Blvd , Suffern, NY, USA]]></address>
+<Snippet>2 Executive Blvd , Suffern, NY, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/kinetic-tetrahedra"><img src="http://www.charlesperry.com/media/sculpture/small/kinetic_tetrahedra_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/kinetic-tetrahedra" target="_top"><b>Kinetic Tetrahedra<b/></a><br><br>
+  The Lynmark Group<br>
+  Suffern, NY, USA<br>
+  <br>
+  1989<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-74.116741,41.119627,0</coordinates></Point>
+</Placemark>
+<Placemark id="Mercator"><name><![CDATA[Mercator]]></name>
+<address><![CDATA[19 Martin Place, Sydney, , Australia]]></address>
+<Snippet>19 Martin Place, Sydney, , Australia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/mercator-2"><img src="http://www.charlesperry.com/media/sculpture/small/Mercator_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/mercator-2" target="_top"><b>Mercator<b/></a><br><br>
+  Theatre Royal<br>
+  Sydney,  Australia<br>
+  <br>
+  1975<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>151.209421,-33.86838,0</coordinates></Point>
+</Placemark>
+<Placemark id="Octaform"><name><![CDATA[Octaform]]></name>
+<address><![CDATA[ Hanover, NH, USA]]></address>
+<Snippet> Hanover, NH, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Octaform</b></a><br><br>
+  Dartmouth College &lt;br&gt; Hood Museum of Art <br>
+  Hanover, NH, USA<br>
+  <br>
+  1974<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.287545,43.701656,0</coordinates></Point>
+</Placemark>
+<Placemark id="Quartet"><name><![CDATA[Quartet]]></name>
+<address><![CDATA[300 N Marienfeld St, Midland, TX, USA]]></address>
+<Snippet>300 N Marienfeld St, Midland, TX, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/quartet"><img src="http://www.charlesperry.com/media/sculpture/small/Quartet_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/quartet" target="_top"><b>Quartet<b/></a><br><br>
+  Summit Building<br>
+  Midland, TX, USA<br>
+  <br>
+  1985<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-102.0792,31.999672,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ram"><name><![CDATA[Ram]]></name>
+<address><![CDATA[695 Town Center Drive, Costa Mesa, CA, USA]]></address>
+<Snippet>695 Town Center Drive, Costa Mesa, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/ram"><img src="http://www.charlesperry.com/media/sculpture/small/Ram_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/ram" target="_top"><b>Ram<b/></a><br><br>
+  South Coast Plaza<br>
+  Costa Mesa, CA, USA<br>
+  <br>
+  1977<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-117.884138,33.691727,0</coordinates></Point>
+</Placemark>
+<Placemark id="Regeneration"><name><![CDATA[Regeneration]]></name>
+<address><![CDATA[351-0197 Wako City, Tokyo, , Japan]]></address>
+<Snippet>351-0197 Wako City, Tokyo, , Japan</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/regeneration"><img src="http://www.charlesperry.com/media/sculpture/small/Regeneration_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/regeneration" target="_top"><b>Regeneration<b/></a><br><br>
+  Zeimu University<br>
+  Tokyo,  Japan<br>
+  <br>
+  1999<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>139.6073947,35.7747537,0</coordinates></Point>
+</Placemark>
+<Placemark id="Reno Mace"><name><![CDATA[Reno Mace]]></name>
+<address><![CDATA[Meadowood Mall, Reno, NV, USA]]></address>
+<Snippet>Meadowood Mall, Reno, NV, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/reno-mace"><img src="http://www.charlesperry.com/media/sculpture/small/reno_mace_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/reno-mace" target="_top"><b>Reno Mace<b/></a><br><br>
+  Taubman Corporation<br>
+  Reno, NV, USA<br>
+  <br>
+  1979<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-119.78285,39.47396,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ribbed Mobius Mace"><name><![CDATA[Ribbed Mobius Mace]]></name>
+<address><![CDATA[3170 Fairview Park Dr, Falls Church, VA, USA]]></address>
+<Snippet>3170 Fairview Park Dr, Falls Church, VA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/ribbed-mobius-mace"><img src="http://www.charlesperry.com/media/sculpture/small/RibbedMM_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/ribbed-mobius-mace" target="_top"><b>Ribbed Mobius Mace<b/></a><br><br>
+  Computer Science Corp.<br>
+  Falls Church, VA, USA<br>
+  <br>
+  1998<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-77.213983,38.860669,0</coordinates></Point>
+</Placemark>
+<Placemark id="Rondo"><name><![CDATA[Rondo]]></name>
+<address><![CDATA[ Tokyo, , Japan]]></address>
+<Snippet> Tokyo, , Japan</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/rondo"><img src="http://www.charlesperry.com/media/sculpture/small/Rondo_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/rondo" target="_top"><b>Rondo<b/></a><br><br>
+  Kinshicho Station<br>
+  Tokyo,  Japan<br>
+  <br>
+  1998<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>139.8117683,35.6973496,0</coordinates></Point>
+</Placemark>
+<Placemark id="Rotating Double Helix"><name><![CDATA[Rotating Double Helix]]></name>
+<address><![CDATA[ Fort Lauderdale, FL, USA]]></address>
+<Snippet> Fort Lauderdale, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Rotating Double Helix</b></a><br><br>
+  Sheraton Bal Harbor<br>
+  Fort Lauderdale, FL, USA<br>
+  <br>
+  1981<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-80.122991,25.888285,0</coordinates></Point>
+</Placemark>
+<Placemark id="S"><name><![CDATA[S]]></name>
+<address><![CDATA[69 Castlereagh Street, Sydney, , Australia]]></address>
+<Snippet>69 Castlereagh Street, Sydney, , Australia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/s"><img src="http://www.charlesperry.com/media/sculpture/small/S_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/s" target="_top"><b>S<b/></a><br><br>
+  MLC Centre<br>
+  Sydney,  Australia<br>
+  <br>
+  1977<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>151.209388,-33.868153,,0</coordinates></Point>
+</Placemark>
+<Placemark id="Sea &amp; Sky"><name><![CDATA[Sea & Sky]]></name>
+<address><![CDATA[899-4394, Kokubu, Kagoshima, Japan]]></address>
+<Snippet>899-4394, Kokubu, Kagoshima, Japan</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/sea-sky"><img src="http://www.charlesperry.com/media/sculpture/small/sea-sky_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/sea-sky" target="_top"><b>Sea &amp; Sky<b/></a><br><br>
+  Kokubu Civic Center <br>Kirishima City Hall<br>
+  Kokubu, Kagoshima, Japan<br>
+  <br>
+  1997<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>130.762753,31.740764,0</coordinates></Point>
+</Placemark>
+<Placemark id="Shaving"><name><![CDATA[Shaving]]></name>
+<address><![CDATA[1700 Palm Beach Lakes Blvd, West Palm Beach, FL, USA]]></address>
+<Snippet>1700 Palm Beach Lakes Blvd, West Palm Beach, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/shaving"><img src="http://www.charlesperry.com/media/sculpture/small/shaving_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/shaving" target="_top"><b>Shaving<b/></a><br><br>
+  Flagler Federal Tower<br>
+  West Palm Beach, FL, USA<br>
+  <br>
+  1988<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-80.083543,26.723949,0</coordinates></Point>
+</Placemark>
+<Placemark id="Shell Mace"><name><![CDATA[Shell Mace]]></name>
+<address><![CDATA[1 Spring St, Melbourne, , Australia]]></address>
+<Snippet>1 Spring St, Melbourne, , Australia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/shall-mace"><img src="http://www.charlesperry.com/media/sculpture/small/ShellM_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/shall-mace" target="_top"><b>Shell Mace<b/></a><br><br>
+  Shell Oil Co. Ltd.<br>
+  Melbourne,  Australia<br>
+  <br>
+  1989<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>144.974792,-37.815245,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ship of our Nights"><name><![CDATA[Ship of our Nights]]></name>
+<address><![CDATA[ Knoxville, TN, USA]]></address>
+<Snippet> Knoxville, TN, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/ship-of-our-nights-1"><img src="http://www.charlesperry.com/media/sculpture/small/Shipofournights_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/ship-of-our-nights-1" target="_top"><b>Ship of our Nights<b/></a><br><br>
+  East Towne Mall<br>
+  Knoxville, TN, USA<br>
+  <br>
+  1984<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-83.87586,36.033909,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ship of our Nights"><name><![CDATA[Ship of our Nights]]></name>
+<address><![CDATA[ Cincinnati, OH, USA]]></address>
+<Snippet> Cincinnati, OH, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Ship of our Nights</b></a><br><br>
+  Linclay Corporation<br>
+  Cincinnati, OH, USA<br>
+  <br>
+  1984<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-84.382483,39.244016,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ship of our Nights"><name><![CDATA[Ship of our Nights]]></name>
+<address><![CDATA[301 Main St, Norwalk, CT, USA]]></address>
+<Snippet>301 Main St, Norwalk, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Ship of our Nights</b></a><br><br>
+  Merritt 7 Building # 3<br>
+  Norwalk, CT, USA<br>
+  <br>
+  1985<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.426256,41.149569,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ship of our Nights"><name><![CDATA[Ship of our Nights]]></name>
+<address><![CDATA[ Jeddah, , Saudi Arabia]]></address>
+<Snippet> Jeddah, , Saudi Arabia</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Ship of our Nights</b></a><br><br>
+  Saudi Arabian Airlines<br>
+  Jeddah,  Saudi Arabia<br>
+  <br>
+  1977<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>39.15069,21.670002,0</coordinates></Point>
+</Placemark>
+<Placemark id="Ship of our Nights"><name><![CDATA[Ship of our Nights]]></name>
+<address><![CDATA[772 Greensferry Ave SW, Atlanta, GA, USA]]></address>
+<Snippet>772 Greensferry Ave SW, Atlanta, GA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Ship of our Nights</b></a><br><br>
+  Spelman College<br>
+  Atlanta, GA, USA<br>
+  <br>
+  1970<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-84.412847,33.74647,0</coordinates></Point>
+</Placemark>
+<Placemark id="Solar Cantata"><name><![CDATA[Solar Cantata]]></name>
+<address><![CDATA[Hilltop Mall, Richmond, CA, USA]]></address>
+<Snippet>Hilltop Mall, Richmond, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/solar-cantata"><img src="http://www.charlesperry.com/media/sculpture/small/solar_cantata_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/solar-cantata" target="_top"><b>Solar Cantata<b/></a><br><br>
+  Taubman Corporation<br>
+  Richmond, CA, USA<br>
+  <br>
+  1971<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-122.32833,37.980847,0</coordinates></Point>
+</Placemark>
+<Placemark id="Solo"><name><![CDATA[Solo]]></name>
+<address><![CDATA[300 N Marienfeld St, Midland, TX, USA]]></address>
+<Snippet>300 N Marienfeld St, Midland, TX, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/solo"><img src="http://www.charlesperry.com/media/sculpture/small/Solo_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/solo" target="_top"><b>Solo<b/></a><br><br>
+  Summit Building<br>
+  Midland, TX, USA<br>
+  <br>
+  1985<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-102.0792,31.999672,0</coordinates></Point>
+</Placemark>
+<Placemark id="Solstice"><name><![CDATA[Solstice]]></name>
+<address><![CDATA[101 E Kennedy Blvd, Tampa, FL, USA]]></address>
+<Snippet>101 E Kennedy Blvd, Tampa, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/solstice"><img src="http://www.charlesperry.com/media/sculpture/small/Solstice_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/solstice" target="_top"><b>Solstice<b/></a><br><br>
+  Barnett Plaza<br>
+  Tampa, FL, USA<br>
+  <br>
+  1985<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-82.458925,27.947078,0</coordinates></Point>
+</Placemark>
+<Placemark id="Spiral Mace"><name><![CDATA[Spiral Mace]]></name>
+<address><![CDATA[ Hanover, NH, USA]]></address>
+<Snippet> Hanover, NH, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Spiral Mace</b></a><br><br>
+  Dartmouth College &lt;br&gt; Hood Museum of Art <br>
+  Hanover, NH, USA<br>
+  <br>
+  1967<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.287545,43.701656,0</coordinates></Point>
+</Placemark>
+<Placemark id="Split Ribbed Mace"><name><![CDATA[Split Ribbed Mace]]></name>
+<address><![CDATA[ Jacksonville, FL, USA]]></address>
+<Snippet> Jacksonville, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/split-ribbed-mace"><img src="http://www.charlesperry.com/media/sculpture/small/split-ribbed-mace_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/split-ribbed-mace" target="_top"><b>Split Ribbed Mace<b/></a><br><br>
+  Haskell Gardens<br>
+  Jacksonville, FL, USA<br>
+  <br>
+  1991<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-81.69592,30.258004,0</coordinates></Point>
+</Placemark>
+<Placemark id="Split Ribbed Mace"><name><![CDATA[Split Ribbed Mace]]></name>
+<address><![CDATA[336 Prospect Heights, 07606, Hackensack, NJ, USA]]></address>
+<Snippet>336 Prospect Heights, 07606, Hackensack, NJ, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Split Ribbed Mace</b></a><br><br>
+  Prospect Heights Care Center<br>
+  Hackensack, NJ, USA<br>
+  <br>
+  2000<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-74.051526,40.893306,0</coordinates></Point>
+</Placemark>
+<Placemark id="Tetra"><name><![CDATA[Tetra]]></name>
+<address><![CDATA[East Witherspoon Street, Louisville, KY, USA]]></address>
+<Snippet>East Witherspoon Street, Louisville, KY, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Tetra</b></a><br><br>
+  Waterfront Park<br>
+  Louisville, KY, USA<br>
+  <br>
+  1999<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-85.749123,38.258122,0</coordinates></Point>
+</Placemark>
+<Placemark id="The Century"><name><![CDATA[The Century]]></name>
+<address><![CDATA[7 West 43rd Street, New York, NY, USA]]></address>
+<Snippet>7 West 43rd Street, New York, NY, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>The Century</b></a><br><br>
+  Century Association<br>
+  New York, NY, USA<br>
+  <br>
+  1983<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.981052,40.754479,0</coordinates></Point>
+</Placemark>
+<Placemark id="The Guardian"><name><![CDATA[The Guardian]]></name>
+<address><![CDATA[1246 East Main Street, Stamford, CT, USA]]></address>
+<Snippet>1246 East Main Street, Stamford, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/guardian"><img src="http://www.charlesperry.com/media/sculpture/small/Guardian_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/guardian" target="_top"><b>The Guardian<b/></a><br><br>
+  Soundview Plaza<br>
+  Stamford, CT, USA<br>
+  <br>
+  1983<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.50964,41.059977,0</coordinates></Point>
+</Placemark>
+<Placemark id="Three"><name><![CDATA[Three]]></name>
+<address><![CDATA[2400 East Commercial Boulevard, Fort Lauderdale, FL, USA]]></address>
+<Snippet>2400 East Commercial Boulevard, Fort Lauderdale, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Three</b></a><br><br>
+  Paragon Group<br>
+  Fort Lauderdale, FL, USA<br>
+  <br>
+  1983<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-80.114901,26.188931,0</coordinates></Point>
+</Placemark>
+<Placemark id="Three"><name><![CDATA[Three]]></name>
+<address><![CDATA[Business Park Dr., Armonk, NY, USA]]></address>
+<Snippet>Business Park Dr., Armonk, NY, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/three-2"><img src="http://www.charlesperry.com/media/sculpture/small/Three_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/three-2" target="_top"><b>Three<b/></a><br><br>
+  Edward A. Lashins Inc.<br>
+  Armonk, NY, USA<br>
+  <br>
+  1986<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.708238,41.12196,0</coordinates></Point>
+</Placemark>
+<Placemark id="Three"><name><![CDATA[Three]]></name>
+<address><![CDATA[9665 Wilshire Blvd, Beverly Hills, CA, USA]]></address>
+<Snippet>9665 Wilshire Blvd, Beverly Hills, CA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Three</b></a><br><br>
+  Wilshire &amp; Bedford<br>
+  Beverly Hills, CA, USA<br>
+  <br>
+  1975<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-118.404162,34.067296,0</coordinates></Point>
+</Placemark>
+<Placemark id="Thrice"><name><![CDATA[Thrice]]></name>
+<address><![CDATA[84 2nd Ave North, Minneapolis, MN, USA]]></address>
+<Snippet>84 2nd Ave North, Minneapolis, MN, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/thrice"><img src="http://www.charlesperry.com/media/sculpture/small/Thrice_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/thrice" target="_top"><b>Thrice<b/></a><br><br>
+  Federal Reserve Bank<br>
+  Minneapolis, MN, USA<br>
+  <br>
+  1973<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-93.267273,44.9869777,0</coordinates></Point>
+</Placemark>
+<Placemark id="Turbo"><name><![CDATA[Turbo]]></name>
+<address><![CDATA[3135 Easton Turnpike, Fairfield, CT, USA]]></address>
+<Snippet>3135 Easton Turnpike, Fairfield, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/turbo"><img src="http://www.charlesperry.com/media/sculpture/small/Turbo_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/turbo" target="_top"><b>Turbo<b/></a><br><br>
+  General Electric Headquarters<br>
+  Fairfield, CT, USA<br>
+  <br>
+  1974<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-73.252459,41.21613,0</coordinates></Point>
+</Placemark>
+<Placemark id="Uconn"><name><![CDATA[Uconn]]></name>
+<address><![CDATA[Music Library, 1220 Storrs Road, Storrs, CT, USA]]></address>
+<Snippet>Music Library, 1220 Storrs Road, Storrs, CT, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Uconn</b></a><br><br>
+  University of Connecticut<br>
+  Storrs, CT, USA<br>
+  <br>
+  1990<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-72.244399,41.804912,0</coordinates></Point>
+</Placemark>
+<Placemark id="Untitled"><name><![CDATA[Untitled]]></name>
+<address><![CDATA[2793 Sheridan Avenue, Miami, FL, USA]]></address>
+<Snippet>2793 Sheridan Avenue, Miami, FL, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"><a href="http://www.charlesperry.com/sculpture/untitled"><img src="http://www.charlesperry.com/media/sculpture/small/untitled_s.jpg" width="98" /></a></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/untitled" target="_top"><b>Untitled<b/></a><br><br>
+  Miami Beach Youth Center<br>
+  Miami, FL, USA<br>
+  <br>
+  1978<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-80.129361,25.803775,0</coordinates></Point>
+</Placemark>
+<Placemark id="Vertical Duality"><name><![CDATA[Vertical Duality]]></name>
+<address><![CDATA[1000 Abernathy Rd NE, Atlanta, GA, USA]]></address>
+<Snippet>1000 Abernathy Rd NE, Atlanta, GA, USA</Snippet>
+<description><![CDATA[<table>
+  <tr><td colspan="2" align="center"><a href="http://www.charlesperry.com">Charles O. Perry</a><br></td><br></tr>
+  <tr><td align="center"></td>
+  <td align="center" style="padding: 10px;"><a href="http://www.charlesperry.com/sculpture/list/" target="_top"><b>Vertical Duality</b></a><br><br>
+  Northpark Town Center<br>
+  Atlanta, GA, USA<br>
+  <br>
+  1986<br>
+</td></tr>
+</table>]]>
+</description>
+<styleUrl>#style2</styleUrl>
+<Point>
+<coordinates>-84.352641,33.934628,0</coordinates></Point>
+</Placemark>
+</Folder>
+</Document>
+</kml>
+
