@@ -1,8 +1,8 @@
-# Charles O. Perry - Artist Portfolio Website #
+# Charles O. Perry - Artist Portfolio Website 
 
 A Django-based portfolio website showcasing the sculpture, jewelry, puzzles, and chairs of artist Charles O. Perry. This site has been modernized to Django 5.x with a file-based data architecture.
 
-## Features ##
+## Features
 
 - **Sculpture Gallery**: Browse sculptures by style (ribbed, planar, topological, solid) or material
 - **Jewelry Collection**: View pendants, earrings, pins, and other jewelry pieces
@@ -50,10 +50,6 @@ python manage.py runserver
 
 5. **Visit the site**:
    - Main site: http://localhost:8000/
-   - Sculpture: http://localhost:8000/sculpture/
-   - Jewelry: http://localhost:8000/jewelry/
-   - Puzzles: http://localhost:8000/puzzles/
-   - Chairs: http://localhost:8000/chairs/
 
 ## Configuration
 
@@ -166,12 +162,12 @@ This site was migrated from Google App Engine to modern Django:
 
 ## Security
 
--  Secret key moved to environment variables
--  Debug mode configurable
--  No user authentication (reduced attack surface)
--  File-based data (no SQL injection risk)
--  Minimal dependencies
--  Proper email configuration
+- Secret key moved to environment variables
+- Debug mode configurable
+- No user authentication (reduced attack surface)
+- File-based data (no SQL injection risk)
+- Minimal dependencies
+- Proper email configuration
 
 ## Performance
 
