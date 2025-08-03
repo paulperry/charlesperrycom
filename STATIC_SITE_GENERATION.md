@@ -32,26 +32,6 @@ python generate_static_advanced.py
 
 The static site will be generated in the `static_site/` directory:
 
-```
-static_site/
-├── index.html                    # Homepage
-├── sculpture/
-│   ├── index.html               # Main sculpture gallery
-│   ├── style/index.html         # Browse by style
-│   ├── ribbed/index.html        # Ribbed sculptures
-│   ├── cantata/index.html       # Individual sculpture pages
-│   └── ...
-├── jewelry/
-│   ├── index.html               # Jewelry collection
-│   ├── pendants/index.html      # Pendants
-│   └── ...
-├── media/                       # All images, CSS, JS files
-│   ├── sculpture/
-│   ├── jewelry/
-│   └── ...
-└── site-index.html              # Complete page listing
-```
-
 ## Features
 
 ### Basic Generator (`generate_static.py`)
@@ -67,24 +47,11 @@ static_site/
 - ✅ Better error handling and progress reporting
 - ✅ Complete static site with all content
 
-## Hosting Options
+## Hosting 
 
-Once generated, you can host the static site on:
+Once generated, you can host the static site GitHub Pages.
 
-### Free Hosting
-- **GitHub Pages**: Push `static_site/` contents to gh-pages branch
-- **Netlify**: Drag and drop the `static_site/` folder
-- **Vercel**: Deploy the `static_site/` directory
-- **Firebase Hosting**: Upload to Firebase
-
-### Traditional Hosting
-- **Any web server**: Upload files via FTP/SFTP
-- **CDN**: CloudFront, CloudFlare Pages
-- **Shared hosting**: Most providers support static files
-
-## Example Deployment
-
-### GitHub Pages
+### GitHub Pages Hosting
 ```bash
 # After generating static site
 cd static_site
@@ -96,31 +63,9 @@ git remote add origin YOUR_REPO_URL
 git push -u origin gh-pages
 ```
 
-### Netlify
-1. Generate static site: `python generate_static_advanced.py`
-2. Go to [netlify.com](https://netlify.com)
-3. Drag and drop the `static_site/` folder
-4. Your site is live!
-
-## Benefits of Static Site
-
-- ✅ **No server required** - just HTML, CSS, JS
-- ✅ **Fast loading** - no database queries
-- ✅ **Cheap hosting** - many free options
-- ✅ **High availability** - served from CDN
-- ✅ **Secure** - no server-side vulnerabilities
-- ✅ **Easy backup** - just copy files
-
-## Limitations
-
-- ❌ **No contact forms** - forms won't work without backend
-- ❌ **No dynamic content** - content is frozen at generation time
-- ❌ **Manual updates** - need to regenerate after changes
-
 ## Contact Form Solutions
 
 For static sites, you can use:
-- **Netlify Forms**: Built-in form handling
 - **Formspree**: External form service
 - **EmailJS**: Client-side email sending
 - **Google Forms**: Embed Google Forms
